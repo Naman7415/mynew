@@ -29,5 +29,6 @@ def upload_files(request):
             return HttpResponse('success_url')
     else:
         form = FileFieldForm()
+        print('that is called',form)
 
     return render(request, 'upload.html', {'form': form})
